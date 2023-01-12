@@ -17,7 +17,7 @@ y <- as.vector(t(dat[,1])) # outcome (birthweight)
 t <- 1-as.vector(t(dat[,16])) # maternal smoking cessation
 x <- dat[, c(2,5,7,8,9,10,11,22)] # pre-treatment covariates
 x <- data.frame(x)
-names(z) <- c("Marital status", "Foreign-born status", "Previous newborn death", "Mother's age", "Mother's education", "Father's age", "Father's education", "First baby")
+names(x) <- c("Marital status", "Foreign-born status", "Previous newborn death", "Mother's age", "Mother's education", "Father's age", "Father's education", "First baby")
 age <- as.vector(t(dat[,8]))
 
 Mskip <- 1000 # number of burn-in MCMC samples
